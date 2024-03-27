@@ -208,18 +208,18 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             
-            x=update.effective_message.reply_sticker ("CAACAgQAAx0CedjNFgADQmYD5mclE70e8ItJqh6XOTJ6pQnXAAKeCQACgjDpUSeHN4p0P712NAQ")
+            x=update.effective_message.reply_sticker ("CAACAgUAAxkBAAECfbVmBA3e3JRbWbZ-ZiZHJ3NSZQIx-wACfw4AAkR_IFTQSInVvgABlIYeBA")
             x.delete()
             usr = update.effective_user
             lol = update.effective_message.reply_text(
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
+            time.sleep(0.9)
+            lol.edit_text("❤️‍🔥")
             time.sleep(0.6)
-            lol.edit_text("❤")
-            time.sleep(0.5)
+            lol.edit_text("❄️")
+            time.sleep(0.7)
             lol.edit_text("⚡")
-            time.sleep(0.3)
-            lol.edit_text("🧪")
             time.sleep(0.5)
             lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.4)
